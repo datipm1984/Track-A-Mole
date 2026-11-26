@@ -127,7 +127,14 @@
     if (button) button.addEventListener("click", () => { window.location.href = "/capture"; });
   }
 
+  function setupWelcome() {
+    const button = Array.from(document.querySelectorAll("main button"))
+      .find((candidate) => candidate.textContent.includes("Get Started"));
+    if (button) button.addEventListener("click", () => { window.location.href = "/home"; });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    setupWelcome();
     setupHome();
     setupCapture();
     setupAssessment();
