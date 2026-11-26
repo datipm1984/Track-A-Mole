@@ -205,7 +205,12 @@ app.post("/api/lesions", async (req, res) => {
     res.status(201).json({ lesion: rows[0] });
   } catch (error) {
     console.error("Lesion creation failed:", error);
-    res.status(503).json({ error: "Unable to create lesion." });
+    res.status(503).json({
+      error: "Unable to create lesion.",
+      ...(process.env.NODE_ENV !== "production" && {
+        details: error instanceof Error ? error.message : String(error),
+      }),
+    });
   }
 });
 
@@ -253,7 +258,12 @@ app.post("/api/lesions/:id/photos", async (req, res) => {
     });
   } catch (error) {
     console.error("Photo upload failed:", error);
-    res.status(503).json({ error: "Unable to save lesion photo." });
+    res.status(503).json({
+      error: "Unable to save lesion photo.",
+      ...(process.env.NODE_ENV !== "production" && {
+        details: error instanceof Error ? error.message : String(error),
+      }),
+    });
   }
 });
 

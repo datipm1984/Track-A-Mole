@@ -13,6 +13,17 @@
     localStorage.setItem(stateKey, JSON.stringify(state));
   }
 
+  async function responseError(response, fallback) {
+    let payload = null;
+    try {
+      payload = await response.json();
+    } catch (_error) {
+      // Keep the HTTP status when the server did not return JSON.
+    }
+    const detail = payload?.details || payload?.error;
+    return new Error(`${fallback} (${response.status})${detail ? `: ${detail}` : ""}`);
+  }
+
   async function createLesionAndUpload(file) {
     const dataUrl = await new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -31,7 +42,7 @@
       }),
     });
 
-    if (!lesionResponse.ok) throw new Error("Unable to create lesion record.");
+    if (!lesionResponse.ok) throw await responseError(lesionResponse, "Unable to create lesion record");
     const { lesion } = await lesionResponse.json();
 
     const photoResponse = await fetch(`/api/lesions/${lesion.id}/photos`, {
@@ -43,7 +54,7 @@
       }),
     });
 
-    if (!photoResponse.ok) throw new Error("Unable to save lesion photo.");
+    if (!photoResponse.ok) throw await responseError(photoResponse, "Unable to save lesion photo");
     const { photo } = await photoResponse.json();
     saveState({ lesionId: lesion.id, photoId: photo.id, photoUrl: photo.url });
     window.location.href = `/assessment?lesionId=${encodeURIComponent(lesion.id)}&photoId=${encodeURIComponent(photo.id)}`;
@@ -78,6 +89,7 @@
         try {
           await createLesionAndUpload(file);
         } catch (error) {
+          console.error("Capture failed:", error);
           showCaptureMessage(error.message || "Capture could not be saved");
         }
       });
