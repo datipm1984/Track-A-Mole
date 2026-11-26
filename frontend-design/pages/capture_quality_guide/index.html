@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9fc;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#0040a1", "secondary-fixed": "#a0f0f0", "inverse-on-surface": "#eff1f3", "error": "#ba1a1a", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-primary-fixed": "#001847", "surface-variant": "#e1e2e5", "secondary-fixed-dim": "#84d4d3", "surface": "#f8f9fc", "secondary": "#006a6a", "on-secondary-container": "#0b6e6e", "on-tertiary-fixed": "#410002", "on-error": "#ffffff", "surface-tint": "#0856cf", "outline": "#737785", "on-tertiary": "#ffffff", "surface-dim": "#d8dadd", "error-container": "#ffdad6", "surface-container-highest": "#e1e2e5", "primary-fixed": "#dae2ff", "on-tertiary-container": "#ffcec8", "tertiary": "#94000a", "outline-variant": "#c3c6d6", "on-tertiary-fixed-variant": "#930009", "on-secondary-fixed": "#002020", "secondary-container": "#9deeed", "inverse-primary": "#b2c5ff", "on-surface-variant": "#424654", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "primary-container": "#0b57d0", "surface-container-low": "#f2f4f6", "on-secondary-fixed-variant": "#004f4f", "surface-container-high": "#e7e8eb", "primary": "#0041a2", "background": "#f8f9fc", "tertiary-container": "#bb1b1b", "tertiary-fixed": "#ffdad5", "on-primary-container": "#ced9ff", "primary-fixed-dim": "#b2c5ff", "on-surface": "#191c1e", "on-background": "#191c1e", "surface-bright": "#f8f9fc", "surface-container": "#eceef0", "inverse-surface": "#2e3133", "tertiary-fixed-dim": "#ffb4ab" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin-tablet": "1.5rem" }, fontFamily: { "title-lg": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "headline-sm": ["Roboto Flex"], "display-lg": ["Roboto Flex"], "display-md": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "label-md": ["Roboto Flex"], "title-sm": ["Roboto Flex"], "headline-lg-mobile": ["Roboto Flex"], "body-md": ["Roboto Flex"], "body-sm": ["Roboto Flex"], "body-lg": ["Roboto Flex"], "title-md": ["Roboto Flex"] }, fontSize: { "title-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "500" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0px", "fontWeight": "500" }], "display-lg": ["57px", { "lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "400" }], "display-md": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-md text-label-md font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px] rotate-90">battery_full</span></div></div><div class="h-16 px-space-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Navigate up" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container active:bg-surface-container-high text-on-surface transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="SkinCheck Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WyIhORsF3oL_J7U_I_G5RLUxj7NEehUa2PGyUj0p1LXRHb6caODrAZ41liYAbMCsG5Cz5NZXfg_penCBFzsfFnhcmL19Uh4Fm28Imz5P7U4WlJr4A5DExl6djRV5Dcb2MdoIADnlU44pjjWLTCD3axPJfroBjkntYGJbxYPAdnRcKwdIq-wl-4bO6n0UcPPSMJKxsiPuNx0CPs1m9Jo4FplppLSHOESLl83ToTCWVY2ibGtDTDRArlP9PT"/><h1 class="font-title-lg text-title-lg text-on-surface truncate">Capture Lesion</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More information" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container active:bg-surface-container-high text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">info</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-10 px-margin bg-surface flex-1"><div class="flex flex-col w-full gap-space-md select-none">
+<!-- Privacy Shield Banner -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings: 'FILL' 1;">lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 leading-snug">
+      Privacy Protected: Photos remain on-device unless encrypted backup is explicitly enabled.
+    </p>
+</div>
+<!-- Camera Viewfinder Card with Clinical Overlays -->
+<div class="relative w-full aspect-[3/4] bg-inverse-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between p-space-md">
+<!-- Camera Sensor Live Background Simulation -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-85 pointer-events-none" data-alt="Dermatological clinical close-up view of skin texture under soft medical lighting with subtle freckles and epidermis pores, high clarity macro view with pale neutral background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxQT_E1OF5FIQoRcHWUlUNXuyZjyjjZOALyT5-g6ghST8kzszkAaSjHdMosRC3tPTaAYELx6hsIMqsR3Z_JBbXCFPEt0Pcoe5B59sbb-rasz2DUK09S9MOSafYb7Gpp3QJ79V_yqdDt56OBlUl86GSstjG5x-v1f783c0Q8GUrJlclGkEUK_oyhZtggntEZ-0WEZrqeyEtcJpBjRQnXxhYWxjL_X-muLjA72IToLjeL_-_HgtP2E4mvQ')"></div>
+<!-- Soft ambient dark gradient for HUD readability -->
+<div class="absolute inset-0 bg-gradient-to-b from-inverse-surface/70 via-transparent to-inverse-surface/80 pointer-events-none"></div>
+<!-- Viewfinder Top Quick Controls (CameraX HUD) -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<!-- Flash Mode Toggle (Off/Auto/Torch) -->
+<button aria-label="Toggle camera flash" class="h-11 px-space-sm rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface flex items-center gap-space-xs active:bg-inverse-surface/80 transition-colors" id="btn-flash" onclick="toggleFlashMode()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="flash-icon">flash_auto</span>
+<span class="font-label-sm text-label-sm pr-1" id="flash-label">Auto</span>
+</button>
+<!-- Center Tool: Grid Overlay Toggle -->
+<button aria-label="Toggle grid reticle" class="w-11 h-11 rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface flex items-center justify-center active:bg-inverse-surface/80 transition-colors" id="btn-grid" onclick="toggleGridOverlay()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="grid-icon">grid_on</span>
+</button>
+<!-- Macro / Dermatoscope Lens Toggle -->
+<button aria-label="Toggle macro lens calibration" class="h-11 px-space-sm rounded-full bg-inverse-surface/60 backdrop-blur-md text-inverse-on-surface flex items-center gap-space-xs active:bg-inverse-surface/80 transition-colors" id="btn-macro" onclick="toggleMacroMode()" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">biotech</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary-fixed pr-1" id="macro-label">Macro 2x</span>
+</button>
+</div>
+<!-- Interactive Center Reticle: Elliptical Dermatoscope Crosshair Overlay -->
+<div class="relative z-10 flex-1 flex flex-col items-center justify-center my-space-sm pointer-events-none">
+<div class="absolute inset-4 grid grid-cols-3 grid-rows-3 transition-opacity duration-300 opacity-60" id="grid-lines">
+<div class="border-b border-r border-inverse-on-surface/20"></div>
+<div class="border-b border-r border-inverse-on-surface/20"></div>
+<div class="border-b border-inverse-on-surface/20"></div>
+<div class="border-b border-r border-inverse-on-surface/20"></div>
+<div class="border-b border-r border-inverse-on-surface/20"></div>
+<div class="border-b border-inverse-on-surface/20"></div>
+<div class="border-r border-inverse-on-surface/20"></div>
+<div class="border-r border-inverse-on-surface/20"></div>
+<div></div>
+</div>
+<!-- Dermatoscope Target Ring (M3 Medical Calibration Reticle) -->
+<div class="relative w-56 h-56 flex items-center justify-center">
+<!-- Outer calibrated ring with millimeter ticks -->
+<svg class="absolute inset-0 w-full h-full text-secondary-fixed animate-pulse" fill="none" viewbox="0 0 200 200">
+<circle cx="100" cy="100" opacity="0.65" r="92" stroke="currentColor" stroke-dasharray="3 5" stroke-width="1.5"></circle>
+<circle cx="100" cy="100" opacity="0.9" r="80" stroke="currentColor" stroke-width="2"></circle>
+<!-- Cardinal Dermoscopic Crosshairs -->
+<line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="100" x2="100" y1="12" y2="28"></line>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="100" x2="100" y1="172" y2="188"></line>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="12" x2="28" y1="100" y2="100"></line>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="172" x2="188" y1="100" y2="100"></line>
+</svg>
+<!-- Dynamic Laser Focus Center Target -->
+<div class="w-12 h-12 rounded-full border border-secondary-fixed/80 flex items-center justify-center bg-secondary-fixed/10 backdrop-blur-[1px]">
+<div class="w-2 h-2 rounded-full bg-secondary-fixed ring-4 ring-secondary-fixed/30"></div>
+</div>
+<!-- 10mm Reference Marker Pin -->
+<div class="absolute bottom-1 bg-inverse-surface/80 backdrop-blur-md px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface tracking-wider font-mono">10 mm REF</span>
+</div>
+</div>
+</div>
+<!-- Real-time HUD Guidance Pills Carousel -->
+<div class="relative z-10 w-full flex items-center justify-center gap-space-xs overflow-x-auto py-1">
+<div class="flex items-center gap-1 bg-inverse-surface/80 backdrop-blur-md px-space-sm py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-medium">Good lighting detected</span>
+</div>
+<div class="flex items-center gap-1 bg-inverse-surface/80 backdrop-blur-md px-space-sm py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">straighten</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-medium">Keep 10-15cm distance</span>
+</div>
+<div class="flex items-center gap-1 bg-inverse-surface/80 backdrop-blur-md px-space-sm py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">screen_rotation</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-medium">Hold steady</span>
+</div>
+</div>
+</div>
+<!-- Bottom Clinical Camera Controls: Native Android CameraX Actions -->
+<div class="flex items-center justify-around w-full px-space-sm py-space-xs">
+<!-- Left: Android 13+ Photo Picker Launcher -->
+<div class="flex flex-col items-center gap-1">
+<button aria-label="Launch Android Photo Picker" class="relative w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center active:scale-95 transition-transform" onclick="triggerPhotoPickerFeedback()" type="button">
+<span class="material-symbols-outlined text-on-surface text-[26px]">photo_library</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-[10px] px-1.5 py-0.2 rounded-full">Pick</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gallery</span>
+</div>
+<!-- Center: Large Native Circular M3 Shutter -->
+<div class="flex flex-col items-center">
+<button aria-label="Capture dermatoscopic photo" class="w-20 h-20 rounded-full bg-surface-container-lowest p-1.5 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer" id="btn-shutter" onclick="captureLesionFrame()" type="button">
+<div class="w-full h-full rounded-full bg-primary flex items-center justify-center">
+<div class="w-14 h-14 rounded-full border-2 border-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">camera</span>
+</div>
+</div>
+</button>
+</div>
+<!-- Right: Reference Coin/Ruler Calibration Reference Toggle -->
+<div class="flex flex-col items-center gap-1">
+<button aria-label="Calibrate size with coin or ruler marker" class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center active:scale-95 transition-transform text-on-surface" id="btn-reference" onclick="toggleCalibrationMarker()" type="button">
+<span class="material-symbols-outlined text-[26px]" id="reference-icon">square_foot</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="reference-label">Coin/Ruler</span>
+</div>
+</div>
+<!-- Android Bottom Sheet: Quality Guidelines Tray -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Quality Guidelines for Clinical Accuracy</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-semibold">Triage Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      High diagnostic precision requires clear pigment edges and lighting stability across longitudinal scans.
+    </p>
+<!-- Mini-Cards Instruction Mosaic -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<!-- Mini-Card 1: Flat Lighting -->
+<div class="bg-surface-container rounded-lg p-space-xs flex flex-col items-center text-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">light_mode</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Flat Light</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Avoid deep shadows</span>
+</div>
+<!-- Mini-Card 2: Sharp Pigment Focus -->
+<div class="bg-surface-container rounded-lg p-space-xs flex flex-col items-center text-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">center_focus_strong</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Sharp Focus</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Lock border melanin</span>
+</div>
+<!-- Mini-Card 3: Metric Reference -->
+<div class="bg-surface-container rounded-lg p-space-xs flex flex-col items-center text-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">monetization_on</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Coin Marker</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Calibrate millimetric growth</span>
+</div>
+</div>
+</div>
+<!-- Capture Feedback Toast Notification -->
+<div class="opacity-0 transition-opacity duration-300 pointer-events-none fixed bottom-16 inset-x-margin mx-auto max-w-xs bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full flex items-center justify-center gap-2 shadow-xl z-50" id="capture-toast">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-medium">Lesion localized &amp; calibrated</span>
+</div>
+</div>
+<script>
+  // Camera HUD Control State Machine
+  const flashModes = [
+    { label: 'Auto', icon: 'flash_auto' },
+    { label: 'On', icon: 'flash_on' },
+    { label: 'Torch', icon: 'highlight' },
+    { label: 'Off', icon: 'flash_off' }
+  ];
+  let currentFlashIdx = 0;
+  let isGridActive = true;
+  let isMacroActive = true;
+  let isReferenceActive = false;
+
+  function toggleFlashMode() {
+    currentFlashIdx = (currentFlashIdx + 1) % flashModes.length;
+    const mode = flashModes[currentFlashIdx];
+    document.getElementById('flash-icon').textContent = mode.icon;
+    document.getElementById('flash-label').textContent = mode.label;
+  }
+
+  function toggleGridOverlay() {
+    isGridActive = !isGridActive;
+    const gridEl = document.getElementById('grid-lines');
+    const iconEl = document.getElementById('grid-icon');
+    if (isGridActive) {
+      gridEl.classList.remove('opacity-0');
+      gridEl.classList.add('opacity-60');
+      iconEl.textContent = 'grid_on';
+    } else {
+      gridEl.classList.remove('opacity-60');
+      gridEl.classList.add('opacity-0');
+      iconEl.textContent = 'grid_off';
+    }
+  }
+
+  function toggleMacroMode() {
+    isMacroActive = !isMacroActive;
+    const label = document.getElementById('macro-label');
+    if (isMacroActive) {
+      label.textContent = 'Macro 2x';
+      label.classList.add('text-secondary-fixed');
+    } else {
+      label.textContent = 'Wide 1x';
+      label.classList.remove('text-secondary-fixed');
+    }
+  }
+
+  function toggleCalibrationMarker() {
+    isReferenceActive = !isReferenceActive;
+    const btn = document.getElementById('btn-reference');
+    const label = document.getElementById('reference-label');
+    if (isReferenceActive) {
+      btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      label.textContent = 'Marker Active';
+    } else {
+      btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+      btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      label.textContent = 'Coin/Ruler';
+    }
+  }
+
+  function triggerPhotoPickerFeedback() {
+    showToast('Launching Android Photo Picker...');
+  }
+
+  function captureLesionFrame() {
+    const shutter = document.getElementById('btn-shutter');
+    shutter.classList.add('scale-90');
+    setTimeout(() => {
+      shutter.classList.remove('scale-90');
+      showToast('Lesion captured for ABCDE triage');
+    }, 180);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('capture-toast');
+    toast.querySelector('span:last-child').textContent = message;
+    toast.classList.remove('opacity-0');
+    setTimeout(() => {
+      toast.classList.add('opacity-0');
+    }, 2200);
+  }
+</script></main><div class="fixed bottom-0 inset-x-0 pb-safe pointer-events-none flex items-center justify-center pb-2"><div class="w-32 h-1 rounded-full bg-on-surface-variant/40"></div></div></body></html>

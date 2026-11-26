@@ -1,0 +1,7 @@
+ml/data/
+ml/artifacts/
+__pycache__/
+*.py[cod]
+uploads/
+frontend-design-full/
+.idea/

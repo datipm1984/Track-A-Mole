@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9fc;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#0040a1", "secondary-fixed": "#a0f0f0", "inverse-on-surface": "#eff1f3", "error": "#ba1a1a", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-primary-fixed": "#001847", "surface-variant": "#e1e2e5", "secondary-fixed-dim": "#84d4d3", "surface": "#f8f9fc", "secondary": "#006a6a", "on-secondary-container": "#0b6e6e", "on-tertiary-fixed": "#410002", "on-error": "#ffffff", "surface-tint": "#0856cf", "outline": "#737785", "on-tertiary": "#ffffff", "surface-dim": "#d8dadd", "error-container": "#ffdad6", "surface-container-highest": "#e1e2e5", "primary-fixed": "#dae2ff", "on-tertiary-container": "#ffcec8", "tertiary": "#94000a", "outline-variant": "#c3c6d6", "on-tertiary-fixed-variant": "#930009", "on-secondary-fixed": "#002020", "secondary-container": "#9deeed", "inverse-primary": "#b2c5ff", "on-surface-variant": "#424654", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "primary-container": "#0b57d0", "surface-container-low": "#f2f4f6", "on-secondary-fixed-variant": "#004f4f", "surface-container-high": "#e7e8eb", "primary": "#0041a2", "background": "#f8f9fc", "tertiary-container": "#bb1b1b", "tertiary-fixed": "#ffdad5", "on-primary-container": "#ced9ff", "primary-fixed-dim": "#b2c5ff", "on-surface": "#191c1e", "on-background": "#191c1e", "surface-bright": "#f8f9fc", "surface-container": "#eceef0", "inverse-surface": "#2e3133", "tertiary-fixed-dim": "#ffb4ab" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin-tablet": "1.5rem" }, fontFamily: { "title-lg": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "headline-sm": ["Roboto Flex"], "display-lg": ["Roboto Flex"], "display-md": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "label-md": ["Roboto Flex"], "title-sm": ["Roboto Flex"], "headline-lg-mobile": ["Roboto Flex"], "body-md": ["Roboto Flex"], "body-sm": ["Roboto Flex"], "body-lg": ["Roboto Flex"], "title-md": ["Roboto Flex"] }, fontSize: { "title-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "500" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0px", "fontWeight": "500" }], "display-lg": ["57px", { "lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "400" }], "display-md": ["45px", { "lineHeight": "52px", "letterSpacing": "0px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-md text-label-md font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px] rotate-90">battery_full</span></div></div><div class="h-16 px-space-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Navigate up" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container active:bg-surface-container-high text-on-surface transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="SkinCheck Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WyIhORsF3oL_J7U_I_G5RLUxj7NEehUa2PGyUj0p1LXRHb6caODrAZ41liYAbMCsG5Cz5NZXfg_penCBFzsfFnhcmL19Uh4Fm28Imz5P7U4WlJr4A5DExl6djRV5Dcb2MdoIADnlU44pjjWLTCD3axPJfroBjkntYGJbxYPAdnRcKwdIq-wl-4bO6n0UcPPSMJKxsiPuNx0CPs1m9Jo4FplppLSHOESLl83ToTCWVY2ibGtDTDRArlP9PT"/><h1 class="font-title-lg text-title-lg text-on-surface truncate">Lesion Detail</h1></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="More information" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container active:bg-surface-container-high text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">info</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-10 px-margin bg-surface flex-1"><div class="flex flex-col w-full pb-12 gap-space-lg">
+<!-- Interactive Viewport Card (Lesion Dermoscopy + AI Overlays) -->
+<section class="flex flex-col w-full rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="relative w-full aspect-[4/3] bg-surface-container-highest overflow-hidden select-none" id="viewport-box">
+<!-- High-resolution dermoscopy scan placeholder -->
+<img alt="Analyzed lesion dermoscopic view" class="w-full h-full object-cover transition-transform duration-300 ease-out origin-center scale-100" data-alt="Close-up clinical macro dermoscopy photograph of a light brown melanocytic nevus on fair skin, illuminated with polarized dermatoscope ring lighting, clinical skin textures, high sharpness and medical clarity." id="derm-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYNCf3zhY3YAlzPwn0lC2nXwBjplsCF9i7jXSmR7UM5ihQPXrIA1IY6Kjx1s3MB8w29dCbSHU3nJleNOLxzuaNAEMSxFw_-bfjRsf0jw7xWlT-wAW1Q_ar5RDiCBadf8xc53KsBh5bDy5REax5N8lBAPSoESKt4bBlDdIetv_HTfkJhOWDytIxmumUDIoTOaGqSjaeFc2Px9ruX46QDDrJRh-nTZay5BfwNnV1G8FQXTw-j2gt_8ItXQ"/>
+<!-- AI Vector Diagnostic Overlays (SVG) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-300 opacity-100" fill="none" id="ai-overlays" viewbox="0 0 400 300">
+<!-- Asymmetry Axes -->
+<g class="transition-opacity duration-200" id="overlay-asymmetry">
+<line stroke="#006a6a" stroke-dasharray="4 4" stroke-opacity="0.85" stroke-width="1.5" x1="200" x2="200" y1="20" y2="280"></line>
+<line stroke="#006a6a" stroke-dasharray="4 4" stroke-opacity="0.85" stroke-width="1.5" x1="70" x2="330" y1="150" y2="150"></line>
+<circle cx="200" cy="150" fill="#a0f0f0" r="5" stroke="#006a6a" stroke-width="1.5"></circle>
+<text class="font-label-sm text-label-sm" fill="#006a6a" font-weight="600" x="206" y="36">Major Axis</text>
+</g>
+<!-- Border Contouring -->
+<g class="transition-opacity duration-200" id="overlay-border">
+<path d="M 130,150 C 130,110 160,90 200,88 C 242,86 270,112 272,148 C 274,185 248,212 205,214 C 160,216 128,190 130,150 Z" fill="#b2c5ff" fill-opacity="0.18" stroke="#0b57d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Micro-notches detected -->
+<circle cx="268" cy="128" fill="#bb1b1b" r="4"></circle>
+<circle cx="140" cy="180" fill="#bb1b1b" r="4"></circle>
+</g>
+<!-- Calibrated Scale Marker -->
+<g>
+<line stroke="#ffffff" stroke-width="2.5" x1="24" x2="74" y1="272" y2="272"></line>
+<line stroke="#ffffff" stroke-width="2" x1="24" x2="24" y1="268" y2="276"></line>
+<line stroke="#ffffff" stroke-width="2" x1="74" x2="74" y1="268" y2="276"></line>
+<text class="font-label-sm text-label-sm" fill="#ffffff" font-weight="600" x="24" y="262">5.0 mm</text>
+</g>
+</svg>
+<!-- Viewport Action Pills Floating Overlay -->
+<div class="absolute top-space-sm left-space-sm right-space-sm flex items-center justify-between pointer-events-none">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-sm font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Calibrated 20x Optical
+        </span>
+<button aria-label="Toggle Magnification" class="pointer-events-auto h-9 px-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-transform shadow-sm" id="btn-zoom-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]" id="zoom-icon">zoom_in</span>
+<span id="zoom-text">2.5x</span>
+</button>
+</div>
+<!-- Detection Legend Pill Tray -->
+<div class="absolute bottom-space-sm inset-x-space-sm flex items-center justify-center gap-space-xs">
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm flex items-center gap-1 transition-colors shadow-sm bg-secondary-container text-on-secondary-container" id="toggle-axis" type="button">
+<span class="material-symbols-outlined text-[14px]">architecture</span>
+          Axes
+        </button>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm flex items-center gap-1 transition-colors shadow-sm bg-primary-container text-on-primary-container" id="toggle-contour" type="button">
+<span class="material-symbols-outlined text-[14px]">adjust</span>
+          Contour
+        </button>
+</div>
+</div>
+<!-- Lesion Quick Meta Strip -->
+<div class="px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+<span>Right Shoulder • Lesion #2</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>Oct 24, 2024</span>
+</div>
+</div>
+</section>
+<!-- Medical Safety Banner & Triage Level -->
+<section class="flex flex-col gap-space-sm w-full">
+<!-- M3 Tonal Result Card -->
+<div class="rounded-xl p-space-md bg-secondary-container/60 flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-secondary-container uppercase tracking-wide">Assessment Outcome</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary font-semibold">Routine Monitor</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">
+        Low to Moderate Concern
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Pigment distribution is broadly consistent with a benign compound nevus. Mild border asymmetry warrants scheduled periodic review.
+      </p>
+</div>
+<!-- Mandatory Regulatory / Clinical Disclaimer -->
+<div class="rounded-xl p-space-md bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0 mt-0.5">shield_with_heart</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="font-semibold text-on-surface">AI Triage Notice:</strong> This algorithm supports self-examination tracking and does not provide an official medical diagnosis. Seek an in-person clinical exam from a certified dermatologist if you notice rapid growth, itchiness, or bleeding.
+      </p>
+</div>
+</section>
+<!-- Next Step Scheduled Monitoring Card (Moment of Reassurance) -->
+<section class="w-full rounded-xl bg-surface-container p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">event_repeat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Re-scan in 30 Days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Target date: Nov 24 • Reminder scheduled</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">check_circle</span>
+</section>
+<!-- ABCDE Clinical Breakdown Section -->
+<section class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-title-md text-title-md text-on-surface">ABCDE Dermatology Matrix</h2>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">help_outline</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">5 of 5 Analyzed</span>
+</div>
+<!-- Collapsible Accordion List -->
+<div class="flex flex-col gap-space-xs w-full" id="abcde-container">
+<!-- A: Asymmetry -->
+<article class="abcde-card rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="abcde-header w-full p-space-md flex items-center justify-between text-left select-none" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-title-sm text-title-sm text-on-secondary-fixed shrink-0">A</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Asymmetry</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">88% Symmetrical</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Low Risk</span>
+<span class="material-symbols-outlined chevron text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+</button>
+<div class="abcde-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-xs">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden mb-1">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<p>Both coronal and sagittal axes demonstrate high geometric concurrence. Pigment structure is balanced across upper and lower hemisphere quadrants.</p>
+</div>
+</article>
+<!-- B: Border -->
+<article class="abcde-card rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="abcde-header w-full p-space-md flex items-center justify-between text-left select-none" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center font-title-sm text-title-sm text-on-primary-fixed shrink-0">B</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Border</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Mildly irregular contour</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant">Monitor</span>
+<span class="material-symbols-outlined chevron text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+</button>
+<div class="abcde-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-xs">
+<p>Superficial margin edge detection noted minor scalloping along the northeast border (radius delta +0.2mm). Not indicative of acute spreading, but flagged for monthly time-lapse comparison.</p>
+</div>
+</article>
+<!-- C: Color -->
+<article class="abcde-card rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="abcde-header w-full p-space-md flex items-center justify-between text-left select-none" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-title-sm text-title-sm text-on-secondary-fixed shrink-0">C</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Color</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Uniform light brown pigment</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Uniform</span>
+<span class="material-symbols-outlined chevron text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+</button>
+<div class="abcde-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 py-1">
+<span class="w-5 h-5 rounded-full bg-[#9e6b47]"></span>
+<span class="font-label-sm text-label-sm">Primary: Ochre Melanin (76%)</span>
+<span class="w-5 h-5 rounded-full bg-[#bd8b67] ml-2"></span>
+<span class="font-label-sm text-label-sm">Secondary (24%)</span>
+</div>
+<p>Absence of worrisome chromatic flags: no slate-blue veils, amelanotic white areas, or deep jet-black speckling detected.</p>
+</div>
+</article>
+<!-- D: Diameter -->
+<article class="abcde-card rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="abcde-header w-full p-space-md flex items-center justify-between text-left select-none" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-title-sm text-title-sm text-on-secondary-fixed shrink-0">D</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Diameter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">4.2 mm (&lt; 6.0 mm standard)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Normal</span>
+<span class="material-symbols-outlined chevron text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+</button>
+<div class="abcde-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-xs">
+<p>Total surface area calculates to approximately 13.8 mm². Well beneath the conventional 6.0 mm (pencil eraser) warning threshold.</p>
+</div>
+</article>
+<!-- E: Evolution -->
+<article class="abcde-card rounded-xl bg-surface-container-low overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="abcde-header w-full p-space-md flex items-center justify-between text-left select-none" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-title-sm text-title-sm text-on-secondary-fixed shrink-0">E</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface">Evolution</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">+0.3 mm since Sep 12 (42d)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Stable</span>
+<span class="material-symbols-outlined chevron text-on-surface-variant text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+</button>
+<div class="abcde-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-xs">
+<p>Variation rate is within physiological camera parallax allowance (+0.3 mm delta over 6 weeks). Structural network density remains identical.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Clinical Action Stack -->
+<section class="flex flex-col gap-space-sm w-full pt-space-xs">
+<!-- Primary CTA: Save to Lesion Record Modal Trigger -->
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" id="btn-save-record" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+      Save to Lesion Record
+    </button>
+<!-- Secondary Comparison CTA -->
+<button class="w-full h-12 rounded-full bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" id="btn-compare" type="button">
+<span class="material-symbols-outlined text-[20px]">compare</span>
+      Compare with Prior Photo (Sep 12)
+    </button>
+<!-- Clinical PDF Export CTA -->
+<button class="w-full h-12 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" id="btn-export-pdf" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+      Share Clinical PDF Report with Doctor
+    </button>
+</section>
+<!-- Lesion Assignment Dialog / Sheet Overlay -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-xs transition-opacity duration-300 opacity-0 pointer-events-none" id="save-modal">
+<div class="w-full max-w-lg bg-surface-container-high rounded-t-xl p-space-lg flex flex-col gap-space-md shadow-xl transform translate-y-full transition-transform duration-300" id="save-sheet">
+<div class="w-10 h-1 bg-outline-variant rounded-full mx-auto -mt-2"></div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface">Assign Lesion Record</h3>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container active:scale-95" id="close-modal" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1: Existing Lesion -->
+<label class="p-space-md rounded-xl bg-surface-container flex items-center justify-between cursor-pointer active:bg-surface-container-highest">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[24px]">history</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Update "Right Shoulder #2"</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Replaces 42-day baseline scan</span>
+</div>
+</div>
+<input checked="" class="accent-primary w-5 h-5" name="lesion_target" type="radio" value="existing"/>
+</label>
+<!-- Option 2: New Lesion Entry -->
+<label class="p-space-md rounded-xl bg-surface-container flex items-center justify-between cursor-pointer active:bg-surface-container-highest">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">add_location_alt</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Create as New Lesion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prompts body mapping placement</span>
+</div>
+</div>
+<input class="accent-primary w-5 h-5" name="lesion_target" type="radio" value="new"/>
+</label>
+</div>
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center mt-space-xs active:scale-[0.98] transition-transform" id="confirm-assignment" type="button">
+        Confirm &amp; Log Assessment
+      </button>
+</div>
+</div>
+<!-- Interactive Feedback Toast -->
+<div class="fixed bottom-12 inset-x-space-margin z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex justify-center" id="toast">
+<div class="px-space-md py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toast-message">Record successfully updated</span>
+</div>
+</div>
+</div>
+<script>
+  // Accordion Expand/Collapse Behavior
+  document.querySelectorAll('.abcde-header').forEach(button => {
+    button.addEventListener('click', () => {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const content = button.nextElementSibling;
+      const chevron = button.querySelector('.chevron');
+
+      // Toggle current item
+      if (isExpanded) {
+        button.setAttribute('aria-expanded', 'false');
+        content.classList.add('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+      } else {
+        button.setAttribute('aria-expanded', 'true');
+        content.classList.remove('hidden');
+        chevron.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+
+  // Zoom Toggle Micro-interaction
+  const zoomBtn = document.getElementById('btn-zoom-toggle');
+  const dermImg = document.getElementById('derm-image');
+  const zoomText = document.getElementById('zoom-text');
+  const zoomIcon = document.getElementById('zoom-icon');
+  let isZoomed = false;
+
+  zoomBtn.addEventListener('click', () => {
+    isZoomed = !isZoomed;
+    if (isZoomed) {
+      dermImg.classList.remove('scale-100');
+      dermImg.classList.add('scale-150');
+      zoomText.textContent = '1.0x';
+      zoomIcon.textContent = 'zoom_out';
+    } else {
+      dermImg.classList.remove('scale-150');
+      dermImg.classList.add('scale-100');
+      zoomText.textContent = '2.5x';
+      zoomIcon.textContent = 'zoom_in';
+    }
+  });
+
+  // Vector Overlay Toggles
+  const axisToggle = document.getElementById('toggle-axis');
+  const contourToggle = document.getElementById('toggle-contour');
+  const overlayAxis = document.getElementById('overlay-asymmetry');
+  const overlayContour = document.getElementById('overlay-border');
+
+  let axisVisible = true;
+  let contourVisible = true;
+
+  axisToggle.addEventListener('click', () => {
+    axisVisible = !axisVisible;
+    overlayAxis.style.opacity = axisVisible ? '1' : '0';
+    if (axisVisible) {
+      axisToggle.classList.replace('bg-surface-container-high', 'bg-secondary-container');
+      axisToggle.classList.replace('text-on-surface-variant', 'text-on-secondary-container');
+    } else {
+      axisToggle.classList.replace('bg-secondary-container', 'bg-surface-container-high');
+      axisToggle.classList.replace('text-on-secondary-container', 'text-on-surface-variant');
+    }
+  });
+
+  contourToggle.addEventListener('click', () => {
+    contourVisible = !contourVisible;
+    overlayContour.style.opacity = contourVisible ? '1' : '0';
+    if (contourVisible) {
+      contourToggle.classList.replace('bg-surface-container-high', 'bg-primary-container');
+      contourToggle.classList.replace('text-on-surface-variant', 'text-on-primary-container');
+    } else {
+      contourToggle.classList.replace('bg-primary-container', 'bg-surface-container-high');
+      contourToggle.classList.replace('text-on-primary-container', 'text-on-surface-variant');
+    }
+  });
+
+  // Lesion Save Modal Bottom Sheet
+  const saveBtn = document.getElementById('btn-save-record');
+  const saveModal = document.getElementById('save-modal');
+  const saveSheet = document.getElementById('save-sheet');
+  const closeModal = document.getElementById('close-modal');
+  const confirmAssign = document.getElementById('confirm-assignment');
+  const toast = document.getElementById('toast');
+  const toastMessage = document.getElementById('toast-message');
+
+  function openModal() {
+    saveModal.classList.remove('pointer-events-none', 'opacity-0');
+    saveModal.classList.add('pointer-events-auto', 'opacity-100');
+    saveSheet.classList.remove('translate-y-full');
+    saveSheet.classList.add('translate-y-0');
+  }
+
+  function hideModal() {
+    saveSheet.classList.remove('translate-y-0');
+    saveSheet.classList.add('translate-y-full');
+    saveModal.classList.remove('pointer-events-auto', 'opacity-100');
+    saveModal.classList.add('pointer-events-none', 'opacity-0');
+  }
+
+  function showToast(msg) {
+    toastMessage.textContent = msg;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2800);
+  }
+
+  saveBtn.addEventListener('click', openModal);
+  closeModal.addEventListener('click', hideModal);
+  saveModal.addEventListener('click', (e) => {
+    if (e.target === saveModal) hideModal();
+  });
+
+  confirmAssign.addEventListener('click', () => {
+    hideModal();
+    showToast('Lesion assigned & saved to clinical timeline');
+  });
+
+  document.getElementById('btn-compare').addEventListener('click', () => {
+    showToast('Loading baseline dermoscopic comparison...');
+  });
+
+  document.getElementById('btn-export-pdf').addEventListener('click', () => {
+    showToast('Generating encrypted clinical PDF report...');
+  });
+</script></main><div class="fixed bottom-0 inset-x-0 pb-safe pointer-events-none flex items-center justify-center pb-2"><div class="w-32 h-1 rounded-full bg-on-surface-variant/40"></div></div></body></html>
